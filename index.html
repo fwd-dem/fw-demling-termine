@@ -15,18 +15,25 @@
       align-items: center;
       padding: 40px 16px;
     }
-    .topbar {
-      width: 100%;
-      max-width: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 14px 0;
-      font-size: 13px;
-      font-weight: 600;
-      color: #d92d20;
-      letter-spacing: 0.6px;
-    }
+	.topbar {
+	  width: 100%;
+	  max-width: 420px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  gap: 10px;
+	  padding: 14px 0;
+	  font-size: 24px;
+	  font-weight: 700;
+	  color: #d92d20;
+	  letter-spacing: 1px;
+	}
+
+	.logo {
+	  width: 42px;
+	  height: 42px;
+	  object-fit: contain;
+	}
     .card {
       background: white;
       border-radius: 22px;
@@ -57,7 +64,10 @@
   </style>
 </head>
 <body>
-  <div class="topbar">🚒 FW DEMLING</div>
+  <div class="topbar">
+  <img src="logo_ffw.png" alt="FW Demling Logo" class="logo">
+  <span>FW DEMLING</span>
+  </div>
   <div class="card">
     <h1>📅 Termine - für deine Geräte</h1>
     <p>

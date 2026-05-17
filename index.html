@@ -15,25 +15,29 @@
       align-items: center;
       padding: 40px 16px;
     }
-	.topbar {
-	  width: 100%;
-	  max-width: 420px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  gap: 10px;
-	  padding: 14px 0;
-	  font-size: 26px;
-	  font-weight: 700;
-	  color: #d92d20;
-	  letter-spacing: 1px;
-	}
-
-	.logo {
-	  width: 126px;
-	  height: 126px;
-	  object-fit: contain;
-	}
+    .topbar {
+      width: 100%;
+      max-width: 420px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 14px 0;
+    }
+    .topbar span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 26px;
+      font-weight: 700;
+      color: #d92d20;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+    .logo {
+      width: 126px;
+      height: 126px;
+      object-fit: contain;
+    }
     .card {
       background: white;
       border-radius: 22px;
@@ -65,14 +69,14 @@
 </head>
 <body>
   <div class="topbar">
-  <img src="logo_ffw.png" alt="FW Demling Logo" class="logo">
-  <span>FW DEMLING</span>
+    <img src="logo_ffw.png" alt="FW Demling Logo" class="logo">
+    <span>FW DEMLING</span>
   </div>
   <div class="card">
     <h1>📅 Termine - für deine Geräte</h1>
     <p>
       Lade die Termine herunter und füge sie deinem Kalender hinzu.<br>
-      	  Nach dem Download im angezeigten Fenster öffnen oder speichern.
+      Nach dem Download im angezeigten Fenster öffnen oder speichern.
     </p>
     <div class="divider"></div>
     <a class="btn primary" href="fw_demling_termine.ics">

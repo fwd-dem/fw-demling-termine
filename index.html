@@ -21,6 +21,7 @@
       position: relative;
       display: flex;
       align-items: center;
+      justify-content: center;
       padding: 14px 0;
     }
     .topbar span {
@@ -32,11 +33,21 @@
       color: #d92d20;
       letter-spacing: 1px;
       white-space: nowrap;
+      pointer-events: none;
+    }
+    .logo-wrapper {
+      position: absolute;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 126px;
     }
     .logo {
-      width: 126px;
-      height: 126px;
+      width: 100px;
+      height: 100px;
       object-fit: contain;
+      mix-blend-mode: multiply;
     }
     .card {
       background: white;
@@ -69,7 +80,9 @@
 </head>
 <body>
   <div class="topbar">
-    <img src="logo_ffw.png" alt="FW Demling Logo" class="logo">
+    <div class="logo-wrapper">
+      <img src="logo_ffw.png" alt="FW Demling Logo" class="logo">
+    </div>
     <span>FW DEMLING</span>
   </div>
   <div class="card">
